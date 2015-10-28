@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+  	  <meta charset="utf-8">
+      <title>Supereo-Kontaktformular</title>
+      <meta name="description" content="Komm auf meine Seite.">
+       <link rel="stylesheet" href="stylesheet1.css" media="screen">
+  </head>
+
+   <body>
+<div id="wrapper">
+
+   	<div id ="Kopfbereich"> 
+<h1>Supero Un.Ltd.</h1>
+   	</div> <!-- Ende Kopfbereich -->
+
+   	<div id="Navi">
+<ul>
+	<li><a href="index">Startseite</a></li>
+	<li><a href="tabelle">Übersicht</a></li>
+	<li><a href="kontakt">Kontaktformular</a></li>
+	<li><a href="impressum">Impressum</a></li>
+	<li><a href="steckbrief">Steckbriefe</a></li>
+	<li><a href="faq">FAQ</a></li>
+</ul>
+   	</div>
+  	
+	<div id ="Textbereich">
+ 
+	</div> <!-- Ende Textbereich -->
+
+     <div id ="Fussbereich">
+     	<address>
+     		Supero Un.Ltd. &middot; marveluniverse 12 &middot; 02020 XXXX
+     		<br>
+     		Tel: 1234 4321 &middot;
+     	</address>
+     </div> <!-- Ende Fussbereich -->
+
+      </div> <!-- EndeWrapper -->
+
+    </body>
+</html>

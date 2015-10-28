@@ -1,0 +1,29 @@
+/*Stylesheet für Aufgabe 2*/
+
+body {
+	background-color: #8c8c8c;
+	color: black;
+	font-family: Verdana, sans-serif;
+	font-size: small;
+
+}
+div#wrapper{
+	background-color: white;
+	color: black;
+}
+
+div#Kopfbereich {
+	background-color: #f3c600;
+	color: white;
+}
+
+address {
+	text-align: center;
+	font-size: 80%;
+	font-style: normal;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+
+a:visited ( color: #f3c600; )
+
