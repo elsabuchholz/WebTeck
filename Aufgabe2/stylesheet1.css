@@ -1,29 +1,105 @@
 /*Stylesheet für Aufgabe 2*/
+/*body ist der typselektor, innerhalb der geschweiften Klammern stehen anweisungen
+ein selektor waehlt das zu gestaltende kästchen aus*/
+
+* { padding: 0; margin: 0; }
 
 body {
-	background-color: #8c8c8c;
+	background-color: #5258fa;
 	color: black;
 	font-family: Verdana, sans-serif;
 	font-size: small;
 
+
 }
+/*klassenselektor wird mit einem punkt angesprochen, idselektor mit einer raute*/
 div#wrapper{
 	background-color: white;
 	color: black;
+	margin: 1em;
+}
+div#Navi{
+	padding-top: 5px ;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  background-color: #EFF5FB;
+  margin-bottom: 1em;
+}
+div#Navi li{
+	display: inline;
+}
+div#Navi a:hover {
+	color: white;
+}
+div#Navi li.Sie-sind-hier a {
+	color: white;
+
 }
 
 div#Kopfbereich {
-	background-color: #f3c600;
+	background-color: #E0ECF8;
 	color: white;
+	padding: 10px;
+	
+
+}
+div.Textbereich {
+	margin-bottom: 2em;
+	padding-left: 100px;
 }
 
+
+/* Abstand nach unten */
+h2, p, ul, ol {
+	margin-bottom: 1em; 
+}
+li {
+	margin-left: 1em;
+}
+div#Fussbereich {
+	border-top: 1px solid #8c8c8c; /* Linie oben */
+}
+/*typselektor bezieht sich auf alle address im text*/
 address {
 	text-align: center;
 	font-size: 80%;
 	font-style: normal;
 	letter-spacing: 2px;
-	line-height: 1.5;
+	line-height: 1.5;	
+}
+/*typselektor a und pseudoklasse:visited*/
+a:visited ( color: #f3c600; );
+a:hover (color: #E0ECF8 );
+
+/* Das Kontaktformular */
+form {
+  background-color: grey;
+  width: 370px; /* Breite des Formulars */
+  padding: 20px;
+
+  border: 10px solid #8c8c8c;
+  
+}
+label { /* Beschriftung auf eigener Zeile */
+  display: block;
+  cursor: pointer; /* Mauszeiger wird zur Hand */
+  margin-left: 40px;
+}
+input#tätigkeit,
+input#absender,
+textarea {
+  width: 300px;
+  border: 1px solid #8c8c8c;
+  margin-bottom: 1em;
+  margin-left: 40px;
+
 }
 
-a:visited ( color: #f3c600; )
-
+textarea {
+  height: 7em;
+}
+input:focus,
+textarea:focus {
+  background-color: #EFF5FB;
+}

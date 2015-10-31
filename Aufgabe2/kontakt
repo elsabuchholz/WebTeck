@@ -18,7 +18,7 @@
 <ul>
 	<li><a href="index">Startseite</a></li>
 	<li><a href="tabelle">Übersicht</a></li>
-	<li><a href="kontakt">Kontaktformular</a></li>
+	<li class="Sie-sind-hier"><a href="kontakt">Kontaktformular</a></li>
 	<li><a href="impressum">Impressum</a></li>
 	<li><a href="steckbrief">Steckbriefe</a></li>
 	<li><a href="faq">FAQ</a></li>
@@ -27,6 +27,31 @@
   	
 	<div id ="Textbereich">
  
+<form id="kontakt" name="kontakt" action="">
+
+<!--Dropdownliste -->
+
+<div>
+  <label for="tätigkeit">Welche Arbeit ist zu bewältigen:</label>
+  <input type="text" id="tätigkeit" name="absender" />
+</div>
+
+<div>
+  <label for="absender">Ihre E-Mail-Adresse:</label>
+  <input type="text" id="absender" name="absender" />
+</div>
+
+<div>
+  <label for="tätigkeit">Welche Arbeit ist zu bewältigen::</label>
+  <label for="nachricht">Platz für Wünsche:</label>
+  <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+</div>
+
+<div>
+  <input type="submit" value="Abschicken" />
+</div>
+</form>
+
 	</div> <!-- Ende Textbereich -->
 
      <div id ="Fussbereich">

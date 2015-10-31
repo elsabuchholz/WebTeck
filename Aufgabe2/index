@@ -1,3 +1,4 @@
+<!--Startseite -->
 
 <!DOCTYPE html>
 <html lang="de">
@@ -5,13 +6,17 @@
   	  <meta charset="utf-8">
       <title>Supereo-Startseite</title>
       <meta name="description" content="Komm auf meine Seite.">
-       <link rel="stylesheet" href="http://www.w3.org/StyleSheets/Core/Chocolate">
-       <style >
+      <!--externe css datei, gilt für belieig viele seiten
+       <link rel="stylesheet" href="http://www.w3.org/StyleSheets/Core/Chocolate"> -->
+        <!-- styleblock im head, als element, gilt nur für die seite auf der er steht-->
+        <link rel="stylesheet" href="stylesheet1.css" media="screen">
+        <style >
        body { background-color: grey;}
        </style>
   </head>
 
    <body>
+    <!--div bekommt einen Namenszusatz, damit die kästchen unterschiedlich gestaltet werden können -->
 <div id="wrapper">
 
    	<div id ="Kopfbereich"> 
@@ -20,17 +25,21 @@
 
    	<div id="Navi">
 <ul>
-	<li><a href="index">Startseite</a></li>
+	<li class="Sie-sind-hier"><a href="index">Startseite</a></li>
 	<li><a href="tabelle">Übersicht</a></li>
 	<li><a href="kontakt">Kontaktformular</a></li>
 	<li><a href="impressum">Impressum</a></li>
 	<li><a href="steckbrief">Steckbriefe</a></li>
 	<li><a href="faq">FAQ</a></li>
 </ul>
-   	</div>
-  	
-	<div id ="Textbereich">
- <h2>Sowas wie die X-Men</h2>
+   	</div> <!--Ende Navi  -->
+
+  	<!--klasse ist eine gruppe, die beliebig oft auftauchen kann im gegensatz zur id -->
+	<div class ="Textbereich">
+    <h2>Wer wir sind</h2>
+    <p>Wir sind ein starkes Unternehmen um Ihnen die Arbeit in ihren täglichen Aufgaben zu erleichtern. Dafür stellen wir Ihnen ein starkes Team zur Verfügung.</p>
+
+     <h2>Sowas wie die X-Men</h2>
    	 <b>Brauchst Du Hilfe?</b>
   	  <p>Wir sind immer für Dich da, jeden zweiten oder dritten Tag.</p>
   	  <p>Such dir deinen passenden Lebensretter aus.</p>
