@@ -25,15 +25,37 @@
 </ul>
    	</div>
   	
-	<div id ="Textbereich">
+	<div class ="Textbereich">
  
 <form id="kontakt" name="kontakt" action="">
 
 <!--Dropdownliste -->
+<div>
+<label for="auswahl">Wer darf es sein:</label>
+  <select name="alle_helden" id="auswahl" size="">
+    <option>Aquaman</option>
+    <option>Batman</option>
+    <option>Captain_America</option>
+    <option>Catwoman</option>
+    <option>Cyclops</option>
+    <option>Deadpool</option>
+    <option>Hulk</option>
+    <option>Human_Torch</option>
+    <option>Iceman</option>
+    <option>Invisible_Woman</option>
+    <option>Iron_Man</option>
+    <option>Mister_Fantastic</option>
+    <option>Spider_Man</option>
+    <option>Storm</option>
+    <option>Superman</option>
+    <option>The_Flash</option>
+    <option>Wolverine</option>
+  </select>
+</div>
 
 <div>
   <label for="tätigkeit">Welche Arbeit ist zu bewältigen:</label>
-  <input type="text" id="tätigkeit" name="absender" />
+  <input type="text" id="tätigkeit" name="tätigkeit" />
 </div>
 
 <div>
@@ -42,7 +64,7 @@
 </div>
 
 <div>
-  <label for="tätigkeit">Welche Arbeit ist zu bewältigen::</label>
+ 
   <label for="nachricht">Platz für Wünsche:</label>
   <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
 </div>

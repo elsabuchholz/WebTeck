@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+  	  <meta charset="utf-8">
+      <title>Supereo-Kontaktformular</title>
+      <meta name="description" content="Hast Du Fragen.">
+       <link rel="stylesheet" href="stylesheet1.css" media="screen">
+       <style type="text/css">
+       /*Codequelle: http://cssjockey.com/how-to-create-pure-css-accordion/*/
+       ul#accordeon{
+        list-style: none;
+
+       }
+
+        #accordeon li div.content{
+        display: none;
+        padding: 10px;
+        background-color:#EFF5FB;
+        margin-right: 25em;
+        }
+        #accordeon li:hover div.content{
+          display: inherit;
+        }
+
+       </style>
+  </head>
+
+   <body>
+<div id="wrapper">
+
+   	<div id ="Kopfbereich"> 
+<h1>Supero Un.Ltd.</h1>
+   	</div> <!-- Ende Kopfbereich -->
+
+   	<div id="Navi">
+<ul>
+	<li><a href="index">Startseite</a></li>
+	<li><a href="tabelle">Übersicht</a></li>
+	<li><a href="kontakt">Kontaktformular</a></li>
+	<li><a href="impressum">Impressum</a></li>
+	<li><a href="steckbrief">Steckbriefe</a></li>
+	<li class="Sie-sind-hier"><a href="faq">FAQ</a></li>
+</ul>
+   	</div>
+  	
+	<div class  ="Textbereich">
+
+    <h2>FAQ</h2>
+     <p>Hier ist eine Sammlung der meist gestellten Fragen zu unseren Helden.</p>
+     <p>Fahre über die Frage, so findest du die Antwort.</p>
+     <!--codequelle:http://cssjockey.com/how-to-create-pure-css-accordion/ -->
+     <ul id="accordeon">
+      <li>
+        <h3>Wie weit im Vorraus muss ich meine Hilfe buchen?</h3>
+        <div class="content">
+            Innerhalb von einem Tag können Sie buchen.
+        </div>
+      </li>
+
+      <li>
+        <h3>Kann ich drei Supermen gleichzeitig buchen?</h3>
+        <div class="content" >
+            Nein, unsere Helfer sind einzigartig.
+        </div>
+      </li>
+
+     </ul>
+
+	</div> <!-- Ende Textbereich -->
+
+     <div id ="Fussbereich">
+     	<address>
+     		Supero Un.Ltd. &middot; marveluniverse 12 &middot; 02020 XXXX
+     		<br>
+     		Tel: 1234 4321 &middot;
+     	</address>
+     </div> <!-- Ende Fussbereich -->
+
+      </div> <!-- EndeWrapper -->
+
+    </body>
+</html>

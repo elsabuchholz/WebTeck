@@ -20,16 +20,16 @@ div#wrapper{
 }
 div#Navi{
 	padding-top: 5px ;
-  padding-right: 20px;
-  padding-bottom: 1px;
-  padding-left: 20px;
-  background-color: #EFF5FB;
-  margin-bottom: 1em;
+  	padding-right: 20px;
+  	padding-bottom: 1px;
+  	padding-left: 20px;
+  	background-color: #EFF5FB;
+  	margin-bottom: 1em;
 }
 div#Navi li{
 	display: inline;
 }
-div#Navi a:hover {
+div#Navi a:hover, a:focus {
 	color: white;
 }
 div#Navi li.Sie-sind-hier a {
@@ -88,6 +88,7 @@ label { /* Beschriftung auf eigener Zeile */
 }
 input#tätigkeit,
 input#absender,
+select#auswahl,
 textarea {
   width: 300px;
   border: 1px solid #8c8c8c;
