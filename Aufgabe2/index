@@ -2,21 +2,18 @@
 
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-  	  <meta charset="utf-8">
-      <title>Supereo-Startseite</title>
-      <meta name="description" content="Komm auf meine Seite.">
+<head>
+  <meta charset="utf-8">
+  <title>Supereo-Startseite</title>
+  <meta name="description" content="Komm auf meine Seite.">
       <!--externe css datei, gilt für belieig viele seiten
        <link rel="stylesheet" href="http://www.w3.org/StyleSheets/Core/Chocolate"> -->
         <!-- styleblock im head, als element, gilt nur für die seite auf der er steht-->
-        <link rel="stylesheet" href="stylesheet1.css" media="screen">
-        <style >
-       body { background-color: grey;}
-       </style>
+  <link rel="stylesheet" href="stylesheet1.css" media="screen">
+        
   </head>
-
    <body>
-    <!--div bekommt einen Namenszusatz, damit die kästchen unterschiedlich gestaltet werden können -->
+
 <div id="wrapper">
 
    	<div id ="Kopfbereich"> 

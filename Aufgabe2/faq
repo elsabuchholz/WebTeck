@@ -16,7 +16,8 @@
         display: none;
         padding: 10px;
         background-color:#EFF5FB;
-        margin-right: 25em;
+        margin-right: 10em;
+        margin-bottom: 1em;
         }
         #accordeon li:hover div.content{
           display: inherit;

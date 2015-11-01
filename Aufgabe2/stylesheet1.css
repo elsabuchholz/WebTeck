@@ -5,7 +5,7 @@ ein selektor waehlt das zu gestaltende kästchen aus*/
 * { padding: 0; margin: 0; }
 
 body {
-	background-color: #5258fa;
+	background-color: silver;
 	color: black;
 	font-family: Verdana, sans-serif;
 	font-size: small;
@@ -51,7 +51,7 @@ div.Textbereich {
 
 
 /* Abstand nach unten */
-h2, p, ul, ol {
+h2, h3, p, ul, ol {
 	margin-bottom: 1em; 
 }
 li {
@@ -81,11 +81,13 @@ form {
   border: 10px solid #8c8c8c;
   
 }
+
 label { /* Beschriftung auf eigener Zeile */
   display: block;
   cursor: pointer; /* Mauszeiger wird zur Hand */
   margin-left: 40px;
 }
+
 input#tätigkeit,
 input#absender,
 select#auswahl,
@@ -104,3 +106,17 @@ input:focus,
 textarea:focus {
   background-color: #EFF5FB;
 }
+
+
+
+
+/*Die Tabellen*/
+table#tabelle {
+			width: 30em;
+          background-color: #EFF5FB;
+          border-collapse: seperate; margin-top: 2em;
+          border: 1px solid;
+          margin: auto;
+        }
+
+
