@@ -112,7 +112,7 @@ textarea:focus {
 
 /*Die Tabellen*/
 table#tabelle {
-			width: 30em;
+			width: 40em;
           background-color: #EFF5FB;
           border-collapse: seperate; margin-top: 2em;
           border: 1px solid;
