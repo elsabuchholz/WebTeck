@@ -72,6 +72,13 @@ address {
 a:visited ( color: #f3c600; );
 a:hover (color: #E0ECF8 );
 
+ div#steckbrief1, #steckbrief2, #steckbrief3{
+          border: 1px solid;
+          background-color: #EFFBF8;
+          margin: 1em;
+          padding: 1em;
+        }
+
 /* Das Kontaktformular */
 form {
   background-color: grey;
@@ -85,6 +92,13 @@ form {
 label { /* Beschriftung auf eigener Zeile */
   display: block;
   cursor: pointer; /* Mauszeiger wird zur Hand */
+  margin-left: 40px;
+}
+div#kontakt p, h3{
+            margin-bottom: 0.5em;
+          }
+
+div#buttonabsenden{
   margin-left: 40px;
 }
 
@@ -119,4 +133,21 @@ table#tabelle {
           margin: auto;
         }
 
+/*FAQ*/
 
+/*Codequelle: http://cssjockey.com/how-to-create-pure-css-accordion/*/
+       ul#accordeon{
+        list-style: none;
+
+       }
+
+        #accordeon li div.content{
+        display: none;
+        padding: 10px;
+        background-color:#EFF5FB;
+        margin-right: 60em;
+        margin-bottom: 1em;
+        }
+        #accordeon li:hover div.content{
+          display: inherit;
+        }

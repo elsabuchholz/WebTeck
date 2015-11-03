@@ -5,12 +5,7 @@
       <title>Supereo-Kontaktformular</title>
       <meta name="description" content="Komm auf meine Seite.">
        <link rel="stylesheet" href="stylesheet1.css" media="screen">
-       <style type="text/css">
-          div#kontakt p, h3{
-            margin-bottom: 0.5em;
-          }
-       </style>
-  </head>
+         </head>
 
    <body>
 <div id="wrapper">

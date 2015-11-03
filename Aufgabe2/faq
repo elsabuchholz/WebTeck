@@ -5,25 +5,7 @@
       <title>Supereo-Kontaktformular</title>
       <meta name="description" content="Hast Du Fragen.">
        <link rel="stylesheet" href="stylesheet1.css" media="screen">
-       <style type="text/css">
-       /*Codequelle: http://cssjockey.com/how-to-create-pure-css-accordion/*/
-       ul#accordeon{
-        list-style: none;
-
-       }
-
-        #accordeon li div.content{
-        display: none;
-        padding: 10px;
-        background-color:#EFF5FB;
-        margin-right: 60em;
-        margin-bottom: 1em;
-        }
-        #accordeon li:hover div.content{
-          display: inherit;
-        }
-
-       </style>
+       
   </head>
 
    <body>
