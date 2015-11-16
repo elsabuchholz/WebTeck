@@ -42,3 +42,14 @@ div.button_nav{
 a {
 	padding-left: 1em;
 }
+
+
+/*------------------------
+Styles für login
+--------------------------
+*/
+
+.btn-register{
+	color:#FFF;
+background-color: #5CB85C;
+}

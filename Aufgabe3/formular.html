@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Splendr-Produkte_Anlegen</title>
+    <title>Splendr-Produkte-Anlegen</title>
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/stylesheet.css" rel="stylesheet">
@@ -50,27 +50,52 @@
     </header><!-- Ende 1.Reihe-->
 
     <section class="row">
-        <div class="col-xs-6 col-md-4">
-          .col-xs-6 .col-md-4
+        
+    <form class="form-horizontal">
+        
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="inputDefault">Beschreibung</label>
+            <div class="col-sm-9">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
         </div>
-        <div class="col-xs-6 col-md-4">
-          .col-xs-6 .col-md-4
-        </div>
-        <div class="col-xs-6 col-md-4">
-          .col-xs-6 .col-md-4
-        </div>
-      </section><!-- Ende 2.Reihe-->
 
-      <section class="row">
-        <div class="col-xs-6 col-md-4">
-          .col-xs-6 .col-md-4
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="inputDefault">Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputDefault" placeholder="Produktname">
+                 
+            </div>
         </div>
-        <div class="col-xs-6 col-md-4">
-          .col-xs-6 .col-md-4
+        
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="inputDefault">Preis</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputDefault" placeholder="Preis in Euro">    
+            </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputDefault">Bild laden</label>
+            <div class="col-sm-9">
+                   <span class="btn btn-default btn-default">Browse <input type="file">
+                   </span>
+            </div>
+            </div>
+
+          <div class="form-group">
+            <div class="col-sm-4 col-sm-offset-8">
+                 <button type="submit" class="btn btn-default">Submit</button> 
+            </div>
+            </div>
+
         </div>
-        <div class="col-xs-6 col-md-4">
-          .col-xs-6 .col-md-4
-        </div>
+      
+        
+    </form>
+
       </section><!-- Ende 3.Reihe-->
       
       <footer class="row">
