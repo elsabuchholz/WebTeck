@@ -1,0 +1,55 @@
+/*------------------------
+Styles für Boxes
+--------------------------
+*/
+
+div.wrapper{
+	background-color: #FFF;
+	color: #000;
+	
+	max-width: 930px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav.navbar{
+	margin-bottom: 1px;
+}
+section.row{
+	margin:30px;
+}
+
+footer.row{
+	padding: 1em;
+	border-top: solid 1px;  
+}
+
+#liste_footer{
+	float: right;
+}
+
+
+/*------------------------
+Styles für Input Elemente
+--------------------------
+*/
+
+div.button_nav{
+	padding-left: 40%;
+}
+
+a {
+	padding-left: 1em;
+}
+
+
+/*------------------------
+Styles für login
+--------------------------
+*/
+
+.btn-register{
+	color:#FFF;
+background-color: #5CB85C;
+}
