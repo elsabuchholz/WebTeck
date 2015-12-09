@@ -7,7 +7,7 @@ class Storage {
     /**
     * Konstruktor - Erzeugt ein neues Storage-Objekt
     */
-    // public function __construct($name ='_s0544180__differ', $host = 'https://studi.f4.htw-berlin.de/www/services/mysql/', $user = 's0544180', $pass = 'WebTeckk')
+    // public function __construct($name ='_s0544180__differ', $host = 'db.f4.htw-berlin.de', $user = 's0544180', pass = 'WebTeckk')
     public function __construct($name ='differ', $host = 'localhost', $user = 'root', $pass = '') {
         try {
             // $this->connection = new PDO('sqlite:products.db');
@@ -88,8 +88,8 @@ class Storage {
     } 
 
 public function last_id(){
-   $lastid= $this->connection->lastInsertId();
-   return $lastid;
+   $id= $this->connection->lastInsertId();
+   return $id;
 }
 public function title_ausgabe(){
 

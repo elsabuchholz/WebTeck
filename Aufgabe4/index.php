@@ -5,21 +5,22 @@
     $storage = new Storage('differ', 'localhost', 'root', '');
     $method = $_SERVER['REQUEST_METHOD'];
 
-    if ($method === 'GET') {
-      $command = $_GET['command'];
-      $id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
-      }
-
-    elseif ($method === 'POST') {
-      $id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
+   
+    if ($method === 'POST') {
+      
       $text1 = filter_var($_POST['text1'], FILTER_SANITIZE_STRING);
       $text2 = filter_var($_POST['text2'], FILTER_SANITIZE_STRING);
       $title = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
 
-      if (!$id) {
-        $storage->add(array($text1, $text2, $title));
 
-      }
+      
+        $storage->add(array($text1, $text2, $title));
+        ##id holen
+           $daten= $storage->last_id();
+         header("Location: http://localhost/Differ2/result.php?id=$daten");
+        // header("Location: db.f4.htw-berlin.de/Aufgaeb4/result.php?id=$daten");
+         exit();
+      
    }
  
 ?>
@@ -47,14 +48,14 @@
     </header><!-- Ende header-->  
 
     <div class=content>
-      <form action="result.php" method="POST">
+      <form action="" method="POST">
         <div class=title>
           <input type="text" name="title" placeholder="Titel eingeben" value=""/>
         </div><!--Ende title-->
 
         <div class=texteingabe>
-         <textarea name="text1" cols="20" rows="5" value="<?= $texte['text1'] ?>"></textarea>
-         <textarea name="text2" cols="20" rows="5" value="<?= $texte['text2'] ?>"></textarea>
+         <textarea name="text1" cols="20" rows="5" ></textarea>
+         <textarea name="text2" cols="20" rows="5" ></textarea>
         </div><!--Ende texteingabe-->
 
         <div id="buttonabsenden">

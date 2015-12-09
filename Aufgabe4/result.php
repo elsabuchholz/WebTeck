@@ -6,21 +6,15 @@
     $method = $_SERVER['REQUEST_METHOD'];
 
     if ($method === 'GET') {
-      $command = $_GET['command'];
+      
       $id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
-      }
-
-    elseif ($method === 'POST') {
-      $id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
-      $text1 = filter_var($_POST['text1'], FILTER_SANITIZE_STRING);
-      $text2 = filter_var($_POST['text2'], FILTER_SANITIZE_STRING);
-      $title = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
+    
       $visits = $storage->count_visits();
-      $lastid = $storage->last_id();
-      $title = $storage->title_ausgabe();
-      if (!$id) {
-        $storage->add(array($text1, $text2, $title));
-      }
+      $daten= $storage->get($id);
+      $title = $daten['title'];
+      $text1 = $daten['text1'];
+      $text2 = $daten['text2'];
+     var_dump($daten);
    }
  
 ?>
