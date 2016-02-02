@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" media="print" href="printstyle.css"  >
+   <link rel="stylesheet" media="screen" href="screenstyle.css"  >
+    <script  src="qrcode.js">
+</script>
+    <script  src="html5-qrcode.js">
+</script>
+ 
+   <title>WifiQr</title>
+  
+  
+</head>
+
+<body>
+   
+
+  <h1>QR</h1>
+      
+   <form name="QRform" id="QRform">
+      
+        SSID:<br>
+         <input type="text" id="ssid" value=""     ><br>
+        Passwort:<br>
+         <input type="text" id="psw" ><br>
+        Encryption:<br>
+         <select id="encrypt" onchange="safeStorage();" > 
+            <option value="wep"> WEP</option> 
+            <option value="wpa/wpa2">WPA/WPA2</option> 
+            <option value="no">keine encryption</option> 
+         </select><br> 
+         <span>hidden:</span>
+         <input type="checkbox" id="box">
+
+    </form>
+     
+      <button type="button"onclick="update();">QR-generieren</button>
+       <button type="button"onclick="safeStorage();">speichern</button>
+      <button type="button"onclick="javascript:window.print()">Drucken</button>
+       <!-- This is where our QRCode will appear in. -->
+    <output id="qrcode"></output>
+    <script type="text/javascript"  >
+    window.onload=loadStorage();
+      function updateQRCode(text) {
+
+        var element = document.getElementById("qrcode");
+
+        var bodyElement = document.body;
+        if(element.lastChild)
+          element.replaceChild(showQRCode(text), element.lastChild);
+        else
+          element.appendChild(showQRCode(text));
+
+      }
+
+document.addEventListener('DOMContentLoaded', update);
+
+
+
+
+function update(){
+  
+  var ssid = document.getElementById('ssid');
+  var wpa = document.getElementById('encrypt');
+  var password = document.getElementById('psw');
+
+  //var output = document.querySelector('#output');
+  var checkbox = document.getElementById('box');
+
+
+      var ssid = ssid.value;
+      var psw = password.value;
+      var encrypt = wpa.value;
+      var box = checkbox.checked;
+
+      updateQRCode('WIFI:S:' + ssid + ';T:' + encrypt + ';P:' + psw + ';H:' + box + ';;'); 
+
+}
+
+function safeStorage(){
+var ssid = document.getElementById('ssid').value;
+var encrypt = document.getElementById('encrypt').value;
+var input = [ssid , encrypt ];
+
+
+
+localStorage.setItem('wert1',JSON.stringify(input));
+
+}
+
+function loadStorage(){
+ var s = JSON.parse(localStorage.getItem('wert1'));
+
+  document.getElementById("ssid").value = s[0];
+  document.getElementById("encrypt").value =s[1] ;
+}
+
+    </script>
+   
+
+   
+</body>
+
+</html>

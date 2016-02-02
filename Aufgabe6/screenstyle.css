@@ -1,0 +1,28 @@
+ @media screen {
+      body {
+         display: flex;
+         flex-direction: column;
+         max-width: 333px;
+         margin: 0 auto;
+      }
+      button {
+         padding: 5px;
+         margin: 5px;
+      }
+
+      input,
+      select,
+      span {
+         margin: 5px;
+      }
+
+      h1,
+      output {
+         text-align: center;
+      }
+
+
+      #qrcode {
+         font-size: 50px;
+      }
+   }

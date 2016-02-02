@@ -1,0 +1,52 @@
+ 
+     
+
+      @media print {
+      	body {
+         display: flex;
+         flex-direction: column;
+         max-width: 333px;
+         margin: 0 auto;
+      }
+
+      	h1 {
+         text-align: center;
+      	 }
+
+      	
+      	
+      	input[type=text]
+      	 {
+      		border: none;
+      	}
+      	select{
+      	 -webkit-appearance: none;
+  		 -moz-appearance: none;	
+      	 appearance: none;
+      	 border: none;
+      	}
+
+      	input[type=checkbox] {
+			visibility: hidden;
+		}
+		span {
+			display: none;
+		}
+
+      	output {
+      	
+         font-size: 50px;
+         text-align: center;
+      	} 
+
+        button 
+         {
+         display: none;
+         }
+
+
+      }
+
+
+
+   
