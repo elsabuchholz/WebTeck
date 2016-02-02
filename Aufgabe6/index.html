@@ -23,7 +23,7 @@
    <form name="QRform" id="QRform">
       
         SSID:<br>
-         <input type="text" id="ssid" value=""     ><br>
+         <input type="text" id="ssid" value="" onchange="safeStorage();"><br>
         Passwort:<br>
          <input type="text" id="psw" ><br>
         Encryption:<br>
@@ -38,7 +38,7 @@
     </form>
      
       <button type="button"onclick="update();">QR-generieren</button>
-       <button type="button"onclick="safeStorage();">speichern</button>
+       
       <button type="button"onclick="javascript:window.print()">Drucken</button>
        <!-- This is where our QRCode will appear in. -->
     <output id="qrcode"></output>
